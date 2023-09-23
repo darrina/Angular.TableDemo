@@ -1,0 +1,12 @@
+<h1>Material UI Tables</h1>
+
+<mat-table [dataSource]="dataSource">
+  <mat-header-row>
+    <mat-header-cell>User Name</mat-header-cell>
+    <mat-header-cell>Age</mat-header-cell>
+  </mat-header-row>
+  <mat-row *ngFor="let user of dataSource.data">
+    <mat-cell>{{ user.userName }}</mat-cell>
+    <mat-cell>{{ user.age }}</mat-cell>
+  </mat-row>
+</mat-table>
